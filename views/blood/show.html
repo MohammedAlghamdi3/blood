@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+  <title>blood donation : {{name}}</title>
+</head>
+
+<body>
+  <div class="show-pokemon">
+    <h1>{{name}}</h1>
+    <div class="links">
+      <a href="/">Home</a>
+    </div>
+    <div class="show">
+        <h3> the name is : {{name}} </h3>
+        <h3> the blood type : {{blood_type}}</h3>
+        <h3> the phone number : {{phone}} </h3>
+        <h3>the Details : {{details}}</h3>
+        <!-- <h3> the location link : <a href="{{location}}">{{location}}</a> </h3> -->
+        <h3> From : {{city}} </h3>
+        <h3> gender : {{gender}} </h3>
+    </div>
+    <form action="/blood/{{id}}?_method=DELETE" method="POST">
+      <button type="submit">Delete the data</button>
+    </form>
+      <a href="/blood/{{id}}/edit" id="editlink">edit</a>
+  </div>
+
+</body>
+
+</html>

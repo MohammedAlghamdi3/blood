@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/styles/styles.css">
+  <title>Edit Pokemon</title>
+</head>
+<body>
+  <h1>Edit User's Data</h1>
+  <div class="links">
+    <a href="/"> Home</a>
+    <a href="/blood">All User's data</a>
+  </div>
+  <form class="create-pokemon" action="/blood/{{id}}?_method=PUT" method="POST" >
+    <label for="name">
+      Name: <input type="text" name="name" id="name" value="{{name}}"/>
+    </label>
+    <label for="type1">
+      blood_type : <input type="text" name="type2" id="type2" value="{{blood_type}}"/>
+    </label>
+    <label for="type2">
+      phone : <input type="text" name="hitpoints" id="hitpoints" value="{{phone}}"/>
+    </label>
+    <label for="hitpoints">
+      details: <input type="text" name="attack" id='attack' value="{{details}}"/>
+    </label>
+    <label for="attack">
+      Location: <input type="text" name="img" id='img' value="{{location}}"/>
+    </label>
+    <label for="defense">
+      City: <input type="text" name="type1" id='type1' value="{{city}}"/>
+    </label>
+      <label for="gender">
+      gender: <input type="text" name="gender" id='gender' value="{{gender}}"/>
+    </label>
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>

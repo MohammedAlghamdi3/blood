@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+  <title>blood donation</title>
+</head>
+
+<body>
+  <h1>The Search result </h1>
+  <div class="links">
+    <a href="/">Home</a>
+    <a href="/blood">All User's data</a>
+  </div>
+    <br><br>
+    <table border="1px">
+    <tr>
+        <td>Name</td>    
+        <td>blood_type</td>    
+        <td>phone</td>
+        <td></td>
+    </tr>
+    {{#bloodusers}}
+    <tr>
+        <td>{{name}}</td>    
+        <td>{{blood_type}}</td>    
+        <td>{{phone}}</td> 
+        <td><a href="/blood/{{id}}">More Details</a></td> 
+    </tr>
+     {{/bloodusers}}
+    </table>
+
+</body>
+
+</html>

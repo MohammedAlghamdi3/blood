@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+  <title>blood donation</title>
+</head>
+
+<body>
+  <h1>welcome to blood donate system </h1>
+  <div class="links">
+    <a href="/">Home</a>
+    <a href="/blood/new">New Donor</a>
+  </div>
+  <div class="blood">
+    {{#bloodusers}}
+    <a href="/blood/{{id}}">
+        <h3>the name : {{name}}
+        <br>the blood type : {{blood_type}}</h3>
+        <div> Phone Number : {{phone}} 
+            <br>
+            From : {{city}}
+            <br>
+            click for more details
+        </div>
+    </a>
+    {{/bloodusers}}
+  </div>
+
+</body>
+
+</html>

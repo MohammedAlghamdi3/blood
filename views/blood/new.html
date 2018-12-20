@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel='stylesheet' type='text/css' href='/static/styles/styles.css'>
+
+  <title>New Donor </title>
+</head>
+
+<body>
+
+  <h1>New Donor </h1>
+  <div class="links">
+    <a href="/"> Home</a>
+  </div>
+  <form class="create-pokemon" action="/blood" method="POST">
+    <label for="name">
+      Name: <input type="text" name="name" id="name" />
+    </label>
+    <label for="type1">
+        City: <select type="text" name="type1" id="type1" >
+        <option value="Riyadh">Riyadh</option>
+        <option value="Makkah">Makkah</option>
+        <option value="Dammam">Dammam</option>
+        <option value="Medina">Medina</option>        
+        
+        </select>
+    </label>
+    <label for="type2">
+        blood_type: <select type="text" name="type2" id="type2" >
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+        
+        
+        </select>
+    </label>
+      <label for="gender">
+          the gender <input type="radio" name="gender" value="Male"> Male
+          <br> <input type="radio" name="gender" value="Female"> Female
+      
+      </label>
+    <label for="hitpoints">
+      phone: <input type="text" name="hitpoints" id='hitpoints' />
+    </label>
+    <label for="attack">
+        Details: <textarea type="text" name="attack" id='attack' ></textarea>
+    </label>
+    <label for="img">
+     location: <input type="text" name="img" id="img" />
+    </label>
+    <button type="submit">Submit</button>
+  </form> 
+</body>
+
+</html>
